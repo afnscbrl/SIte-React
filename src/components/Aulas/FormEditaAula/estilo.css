@@ -1,0 +1,35 @@
+.formE{
+  border: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-edita {
+    border: 0;
+    flex-grow: 2;
+    z-index: 1;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 40px;
+  }
+  .form-edita_input {
+    margin-top: 8px;
+    padding: 4px;
+    border: none;
+    background-color: var(--fundo-detalhes);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+  }
+  
+  .form-edita_submit {
+    align-self: flex-end;
+    width: 60%;
+    background-color: var(--secundaria);
+    color: white;
+    font-weight: 400;
+  }
+  
+  .form-edita_submit:active {
+    background-color: var(--secundaria-ativa);
+  }
