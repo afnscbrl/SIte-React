@@ -1,0 +1,80 @@
+.conteudo {
+    display: flex;
+    justify-content: start;
+    background-color: #000;
+}
+
+.conteudo-home{
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo-aulasadm {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.formularios {
+    flex-direction: row;
+    justify-self: start;
+}
+
+.Cabecalho {
+    display: flex;
+    height: 200px;
+    width: auto;
+    background-color: #373f51;
+    font-weight: bolder;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.cabecalho-butoes {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cabecalho-login, .cabecalho-home {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aulas-conteudo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.forms-aulas {
+    display: flex;
+    flex-direction: column;
+}
+
+.aulas-voltar {
+    margin-top: 15px;
+    margin-left: 50px;
+    justify-self: end;
+}
+
+.aulasAdm-voltar {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+:root {
+    --primaria: #58a4b0;
+    --secundaria: #373f51;
+    --secundaria-ativa: #cccccc;
+    --fundo: #ffffff;
+    --fundo-detalhes: #ececec;
+}
