@@ -39,7 +39,7 @@ const Login = () => {
         const usuario = {nome: nome, senha: pass}
 
 
-        const loginResponse = await axios.post('http://localhost:3030/api/users/login/', JSON.stringify(usuario), {
+        const loginResponse = await axios.post('https://sistema-curso.herokuapp.com/api/users/login/', JSON.stringify(usuario), {
             headers: {
                 'Accept': '*/*',
                 'Content-Type': 'application/json',

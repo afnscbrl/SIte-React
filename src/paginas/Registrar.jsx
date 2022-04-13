@@ -30,7 +30,7 @@ const Registrar = () => {
 
         console.log(usuario)
 
-        const loginResponse = await axios.post('http://localhost:3030/api/users/registro/', usuario, {
+        const loginResponse = await axios.post('https://sistema-curso.herokuapp.com/api/users/registro/', usuario, {
             headers: {
                 'Accept': '*/*',
                 'Content-Type': 'application/json'

@@ -50,7 +50,7 @@ async atualizaModulos() {
 
 async criarModulo(modulo) {
   //const novoModulo = {nome, categoria}
-  await axios.post('http://localhost:3030/api/modulos/', modulo, {
+  await axios.post('https://sistema-curso.herokuapp.com/api/modulos/', modulo, {
     headers: {
       'Accept': '*/*',
       'Content-Type': 'application/json',
@@ -63,7 +63,7 @@ async criarModulo(modulo) {
 }
 
 async deleteModulo(id) {
-  await axios.delete('http://localhost:3030/api/modulos/'+id, {
+  await axios.delete('https://sistema-curso.herokuapp.com/api/modulos/'+id, {
       headers: {
         'Accept': '*/*',
         'Content-Type': 'application/json',
@@ -77,7 +77,7 @@ async deleteModulo(id) {
 
 async editarModulo(id, nome, categoria) {
   const moduloEditado = {nome, categoria}
-  await axios.put('http://localhost:3030/api/modulos/'+id, moduloEditado, {
+  await axios.put('https://sistema-curso.herokuapp.com/api/modulos/'+id, moduloEditado, {
     headers: {
       'Accept': '*/*',
       'Content-Type': 'application/json',

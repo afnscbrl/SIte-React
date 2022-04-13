@@ -18,7 +18,7 @@ const Aulas = () => {
 
 
   useEffect(() => {
-    axios.get('http://localhost:3030/api/aulas/'+id, {
+    axios.get('https://sistema-curso.herokuapp.com/api/aulas/'+id, {
       headers: {
         'Accept': '*/*',
           'Content-Type': 'application/json'

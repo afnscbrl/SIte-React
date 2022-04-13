@@ -25,7 +25,7 @@ class PageAulas extends Component {
   componentDidMount() {
     const url = new URL(window.location.href);
     const urlId = url.pathname.replace(/[^\d]+/g, '');
-    axios.get('http://localhost:3030/api/aulas/'+urlId, {
+    axios.get('https://sistema-curso.herokuapp.com/api/aulas/'+urlId, {
         headers: {
             'Accept': '*/*',
             'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ class PageAulas extends Component {
 async atualizaAulas() {
   const url = new URL(window.location.href);
   const urlId = url.pathname.replace(/[^\d]+/g, '');
-  const novoArrayAulas = await axios.get('http://localhost:3030/api/aulas/'+urlId, {
+  const novoArrayAulas = await axios.get('https://sistema-curso.herokuapp.com/api/aulas/'+urlId, {
     headers: {
         'Accept': '*/*',
         'Content-Type': 'application/json'
@@ -56,7 +56,7 @@ async atualizaAulas() {
 async criarAula(aula) {
   console.log(aula)
   // const novaAula = {aula, modulo, data, duracao}
-  await axios.post('http://localhost:3030/api/aulas/', aula, {
+  await axios.post('https://sistema-curso.herokuapp.com/api/aulas/', aula, {
     headers: {
       'Accept': '*/*',
       'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ async criarAula(aula) {
 }
 
 async deleteAula(id) {
-  await axios.delete('http://localhost:3030/api/aulas/'+id, {
+  await axios.delete('https://sistema-curso.herokuapp.com/api/aulas/'+id, {
       headers: {
         'Accept': '*/*',
         'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ async deleteAula(id) {
 
 async editarAulas(id, nome, modulo, data, duracao) {
   const aulaEditada = {nome, modulo, data, duracao}
-  await axios.put('http://localhost:3030/api/aulas/'+id, aulaEditada, {
+  await axios.put('https://sistema-curso.herokuapp.com/api/aulas/'+id, aulaEditada, {
     headers: {
       'Accept': '*/*',
       'Content-Type': 'application/json',
