@@ -32,7 +32,7 @@ componentDidMount() {
 }
 
 async atualizaModulos() {
-  const novoArrayModulos = await axios.get('http://localhost:3030/api/modulos/', {
+  const novoArrayModulos = await axios.get('https://sistema-curso.herokuapp.com/api/modulos/', {
     headers: {
         'Accept': '*/*',
         'Content-Type': 'application/json'
