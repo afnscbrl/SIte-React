@@ -15,7 +15,7 @@ const Cabecalho = () => {
     
 
     const deslogar = () => {
-        axios.get('http://localhost:3030/api/users/logout', {
+        axios.get('https://sistema-curso.herokuapp.com/api/users/logout', {
             headers: {
                 'Accept': '*/*',
                 'Content-Type': 'application/json',
