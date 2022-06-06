@@ -1,4 +1,4 @@
-# Site de Cuso com React
+# Site de Curso com React
 Site de apresentação de curso feito com react para comunicação com uma API REST
 
 # Resumo do projeto
